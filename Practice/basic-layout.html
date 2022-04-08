@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header, main,footer{
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        header{
+
+            height: 200px;
+            background-color:aqua;
+        }
+        .search{
+            height: 130px;
+            background-color: black;
+        }
+        .nav{
+            height:70px;
+            background-color: cadetblue;
+        }
+        
+        main{
+            
+            height: 400px;
+            background-color: blue;
+            
+        }
+
+        footer{
+            height: 260px;
+            background-color: bisque;
+        }
+        .side-left, .main-content, .side-right{
+            height: 400px;
+            width: 150px;
+            margin-left :12px;
+            float: left;
+        }
+
+        .side-left{
+            background-color: aquamarine;
+        }
+        .main-content{
+            background-color: violet;
+            width: 300px;
+        }
+        .side-right{
+            background-color: coral;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav"></div>
+        <div class="search"></div>
+    </header>
+    <main>
+        <div class="side-left"></div>
+        <div class="main-content"></div>
+        <div class="side-right">
+            <div class="right-one"></div>
+            <div class="right-two"></div>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+</html>

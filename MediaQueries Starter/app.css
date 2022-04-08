@@ -1,0 +1,40 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* min-width:200px means to apply css when width is greater than 200px */
+/* @media (min-width:300px){
+    h1{
+        color: aqua;
+    }
+}
+@media (min-width:500px){
+    h1{
+        color: blue;
+    }
+} */
+
+/* max-width:300px means to apply css when width is less than 300px */
+@media (max-width:300px){
+    h1{
+        color: pink;
+    }
+
+    
+}
+
+

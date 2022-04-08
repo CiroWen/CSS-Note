@@ -1,0 +1,60 @@
+div{
+    width: 50px;
+    height: 50px;
+    background-color: palegreen;
+    border:2px black solid;
+    display:inline-block
+}
+
+#middle{
+    background-color: palevioletred;
+}
+
+/* descendant selector selects elements */
+/* with id middle within element with id static */
+#static #middle{
+    background-color: pink;
+    position: static;
+    /* static position is the default position value */
+    /* it won't be affected by properties such as */
+    /* top, bottom, left, right */
+    left: 200px;
+    top:200px;
+}
+
+#relative #middle{
+    background-color: purple;
+    position: relative;
+    /* relative allows to position the element relatively to its*/
+    /* original position. */
+    /* e.g. right 10px is making the element 10px away from it's original right side */
+    right: 10px;
+    top: 10px;
+}
+
+#absolute #middle{
+    background-color: royalblue;
+    position: absolute;
+    /* absolute positioning removes elements from normal doc flow
+    (think as in the element moves to 
+    another dimension and fixates the position to the page*/
+    top: 300px;
+    left: 200px;
+}
+
+#fixed #middle{
+    background-color: skyblue;
+    position: fixed;
+    /* fixed also removes elements from normal doc layout flows
+    and fixates it's position on the view of user. 
+    e.g. as user scroll the page, the fixed element will keeps it's position*/
+    top:300px;
+    left: 400px;
+}
+
+#sticky #middle{
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}

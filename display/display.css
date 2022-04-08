@@ -1,0 +1,23 @@
+.inlineBlock{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /* inline-block has the attribute of inline(taking up the space only for content of the element and aligning inline */
+    /* while also allow adjusting width and height as a block */
+}
+
+.defaultDiv{
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    display: inline;
+    /* inline doesnt allow property such as width, height */
+}
+
+.inline{
+    width: 100px;
+    height: 100px;
+    background-color:palegreen;
+    
+}

@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+/* 1. display：flex; align-items:center ;
+    allows the content to position the middle of the container
+   2. align-content only works with container is wrap or wrap-reverse */
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    /* flex-direction: row; the default flex-direction*/
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-grow: 1; */
+    
+}
+
+#container div{
+    width: 120px;
+    height: 120px;
+    flex-basis:320px;
+    /* the initial size of the element added to the box,
+    doesnt work without flex-wrap:wrap */
+    /* flex-grow: 1; */
+    /* max-width: 200px; */
+    /* grows up to 200px instead of taking all space*/
+
+}
+
+#container div:first-of-type{
+    /* align-self:stretch; */
+    /* asign-self: adjust elements within a flexbox container */
+    flex-grow:2;
+}
+
+#container div:nth-of-type(5){
+    /* flex-grow: 2; */
+    flex-shrink:2;
+    /* flex-grow only works when container is flex-wrap:wrap
+    in contrast, flex-shrink only works with nowrap */
+}
+

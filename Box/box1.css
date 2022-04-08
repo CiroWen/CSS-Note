@@ -1,0 +1,22 @@
+.box1{
+    width:200px;
+    height:200px;
+    background-color: cyan;
+    /* 以上为内容区(what's inside/ how's inside look) */
+
+    /* border 不同参数数量的变化
+       上 右 下 左 
+       上 左右 下
+       上下 左右
+       上下左右*/
+    /* 
+        margin-left and top will usually push element itself away,
+        while margin-right and bottom will push other elements away.
+    */
+    border-width: 5px;
+    border-color: black blue yellow;
+    border-style: solid dashed dotted;
+    border-top-width: 10px;
+    /* border-style: solid; */
+    padding: 5px px 3px 10px;
+}

@@ -1,0 +1,37 @@
+/* 
+    For all block elements,
+    their horizontal space/width must follow a formular as below:
+    margin left + border left + padding left + width + padding right
+    + border right + padding right = height of parant element
+
+    The margin-right will be changed to 600px so that it satisfies
+    the formula.
+    0 + 0 + 0 + 200 + 0 + 0 + 600 = 800px
+    In the meanwhile, the width is 'auto' by default.
+    
+    the auto property:
+        if the width is 'auto', the width is going to be the 600px
+        to satisfy the formula
+        else if the width is not 'auto' while either margin-left or
+        right is set to auto, the auto will be the 600px to
+        satisfy the formula.
+    -> auto(0) + 0 + 0 + auto(800) + 0 +0 +auto(0) = 800px
+    -> auto(800） + 0 + 0 + 0 + 0 + 0 + 0 = 800px
+    -> auto(400) + 0 + 0 + 0 + 0 + 0 + auto(400) = 800px
+
+    ! if the child element width is wider than it's parent
+    margin-right will be set to negative to satisfy the formula
+ */
+.boxParallel{
+    background-color: aqua;
+    width: 800px;
+}
+
+.inner{
+    width: 400px;
+    margin-left:  auto;
+    margin-right: auto;
+    height: 200px;
+    background-color: aquamarine;
+    
+}

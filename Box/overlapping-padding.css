@@ -1,0 +1,47 @@
+/* vertical and overlapping margin of sibling elements
+   overlapping: sharing a vertical consistent area(not blocked with
+   other element or border.
+
+   - sibling element
+    margin value will be the greater one if the value are both positive
+    - special case:
+    positive and negative value. value will be the sum.
+    both negative value, will be the least one.
+
+    - parent and child element
+    the overlapping margin value will be inhirited to each other.
+    to avoid, simply set a 1px border to the parent, so it's not
+    overlapping anymore.
+ */
+.o1, .o2, .o3,.o4{
+    width: 200px;
+    height: 200px;
+}
+
+
+.o1 {
+    background-color: aqua;
+    margin-bottom: 50px;
+    display: inline;
+}
+
+.o2{
+    margin-top: 50px;
+    background-color: beige;
+}
+
+.o3{
+    background-color:blueviolet;
+    border-top:1px darkblue solid;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.o4{
+    
+    margin-top: 100px;
+    background-color:yellow;
+    height: 100px;
+    width: 100px;
+    
+}

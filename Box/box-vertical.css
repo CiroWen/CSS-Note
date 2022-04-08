@@ -1,0 +1,17 @@
+.boxVertical{
+    background-color:blue;
+    height: 200px;
+    overflow: visible;
+    /* hidden, hide the overflow content of their child element
+        visible, allows their child element to display the overflow 
+        content   
+        auto: generates scroll axis base on the text content*/
+    /* overflow-y , overflow-x */
+}
+
+.v1{
+    background-color: aqua;
+    height: 400px;
+    width: 200px;
+    
+}

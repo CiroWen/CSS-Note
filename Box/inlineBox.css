@@ -1,0 +1,26 @@
+/* inline element's height and width can't be modified
+    while padding, border, margin can be modified but won't affect
+    vertical layout(won't push element away)
+*/
+
+.sp1{
+    background-color: yellow;
+    /* width: 50px; //no effect */
+    padding-right: 50px;
+    /* padding-bottom: 50px; */
+    /* margin-bottom: 500px; */
+    /* border-bottom: 50px solid red; */
+
+
+}
+
+.sp2{
+    width: 50px;
+    /* width: 50px; //no effect */
+    background-color: aquamarine;
+    padding-left: 50px;
+}
+
+.sp3{
+    background-color: lightcoral;
+}

@@ -1,0 +1,44 @@
+.circle{
+     width: 200px;
+     height: 200px;
+     
+     background-color: palegoldenrod;
+}
+
+.circle:hover{
+    background-color: palegreen;
+    border-radius: 50%;
+    transition: background-color 10s;
+    /* transition could specify the property to be anmiated
+    e.g. transition: background-color 10s. only background color will have animation */
+}
+
+section div{
+    height: 50px;
+    width: 50px;
+    background-color: paleturquoise;
+    margin: 5px 5px 5px 5px;
+    transition: background-color 2s ease-in-out, margin-left 2s;
+    /* putting properties in transition specifies what properties to be included
+    for transition in the following order*/
+}
+
+
+section:hover div{
+    margin-left: 200px;
+   background-color: peru;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3){
+    transition-timing-function: ease-in-out;
+}
+/* transition-timing-function refers to the linear animation speed
+e.g. */
