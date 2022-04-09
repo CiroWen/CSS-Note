@@ -1,9 +1,9 @@
 div{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: palegreen;
     border:2px black solid;
-    display:inline-block
+    /* display:inline-block */
 }
 
 #middle{
@@ -57,4 +57,44 @@ div{
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
+}
+
+#layering{
+    background-color: aqua;
+    position: absolute;
+    height: 500px;
+}
+/* z-index could be negative.by default it's 0 */
+#layering div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    z-index: 1;
+    top: 50px;
+    left:50px;
+    background-color: rgba(255, 0, 0, 0.6);
+}
+.box2{
+    z-index: 2;
+    top: 100px;
+    left:100px;
+    background-color: rgba(0, 255, 0, 0.6);
+}
+.box3{
+    z-index: 3;
+    top: 150px;
+    left:150px;
+    background-color: rgba(0, 0, 255, 0.5);
+
+}
+
+
+
+.clearfix{
+    content:"";
+    display: table;
+    clear: both;
 }
