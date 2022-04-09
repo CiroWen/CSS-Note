@@ -5,9 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BFC demo</title>
+    <style>
+        .box1{
+            border: 10px solid red;
+            background-color: aqua;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            float: left;
+        }
+        /* box1 will collapse if box2 is floating(leave the normal flow) */
+
+        /* Properties a BFC has are 
+        1. Won't be covered by floating elements 
+        2. margin of parent and child elements would not overlap
+        3. BFC element is able to contain floating elements as its child element.*/
+
+        /* Ways to enable BFC
+        recommended: overflow: hidden */
+        .clear-box1{
+            border: 10px solid red;
+            background-color: aqua;
+            position:-webkit-sticky;
+        }
+        .clear-box2{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            float: left;
+        }
+
+        /* .clear-box3{
+            clear:left;
+        } */
+        /* also a solution to height collapse */
+        .clear-box1::after{
+            clear:both;
+            display: block;
+            content: ""
+        }
+        /* most recommended solution for  */
+    </style>
 </head>
 <body>
+    <!-- <div class="box1">
+        <div class="box2"></div>
+        
+    </div> -->
     
+    <div class="clear-box1">
+        <div class="clear-box2">
+            
+        </div>
+        
+    </div>
+
 </body>
 </html>
