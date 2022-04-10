@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide pictures</title>
+    <link rel="stylesheet" href="../css-reset/meyerweb.css">
+    <style>
+        
+        .slide-block{
+            background-color: aqua;
+            height: 500px;
+            width: 500px;
+            margin: 100px auto;
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .slide-block li{
+            position: absolute;
+
+        }
+        .slide-block li:nth-of-type(){
+            z-index:1;
+        }
+
+        .progress-dot{
+            /* background-color: aquamarine; */
+            width: 500px;
+            height: 50px;
+            margin: 100px auto;
+            position: absolute;
+            left: 330px;
+            bottom: 350px;
+        }
+
+        .progress-dot li{
+            display: inline-block;
+            background-color:black;
+            border: 6px solid #ffea;
+            border-radius: 100%;
+            margin-left:5px;
+        }
+
+        .progress-dot li:hover,
+        .progress-dot li.active{
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <ul class="slide-block">
+        <li><a href="#"><img src="./slide1.png" alt=""></a></li>
+        <li><a href="#"><img src="./slide2.png" alt=""></a></li>
+        <li><a href="#"><img src="./slide3.png" alt=""></a></li>
+        <li><a href="#"><img src="./slide4.png" alt=""></a></li>
+        <li><a href="#"><img src="./slide5.png" alt=""></a></li>
+    </ul>
+
+    <ul class="progress-dot">
+        <li class="active"><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+
+</body>
+</html>
