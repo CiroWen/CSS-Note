@@ -9,13 +9,13 @@
     <style>
         
         .slide-block{
-            background-color: aqua;
+            /* background-color: aqua; */
+            width: 900px;
             height: 500px;
-            width: 500px;
             margin: 100px auto;
-            content: '';
-            clear: both;
-            display: table;
+            position: relative;
+
+            
         }
 
         .slide-block li{
@@ -28,24 +28,24 @@
 
         .progress-dot{
             /* background-color: aquamarine; */
-            width: 500px;
-            height: 50px;
+            /* width: 500px;
+            height: 50px; */
             margin: 100px auto;
             position: absolute;
-            left: 330px;
-            bottom: 350px;
+            top: 200px;
+            
         }
 
-        .progress-dot li{
-            display: inline-block;
+        .progress-dot a{
+            float:left;
             background-color:black;
             border: 6px solid #ffea;
             border-radius: 100%;
             margin-left:5px;
         }
 
-        .progress-dot li:hover,
-        .progress-dot li.active{
+        .progress-dot a:hover,
+        .progress-dot a.active{
             border-color: black;
         }
     </style>
@@ -57,16 +57,15 @@
         <li><a href="#"><img src="./slide3.png" alt=""></a></li>
         <li><a href="#"><img src="./slide4.png" alt=""></a></li>
         <li><a href="#"><img src="./slide5.png" alt=""></a></li>
-    </ul>
+    
 
-    <ul class="progress-dot">
-        <li class="active"><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-    </ul>
-
+    <div class="progress-dot">
+        <a class="active"href=""></a>
+        <a class=""href=""></a>
+        <a class=""href=""></a>
+        <a class=""href=""></a>
+        <a class=""href=""></a>
+    <div>
+</ul>
 </body>
 </html>
