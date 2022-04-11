@@ -5,15 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font family</title>
+    
+    <script src="https://kit.fontawesome.com/b699ccdb71.js" crossorigin="anonymous"></script>
+    <!-- fontawesome free kit dependency -->
     <style>
-        p{
+        @font-face {
+            font-family: 'demo1';
+            src: url('./font-collection/Wishbone\ Tea\ Demo.otf');
+        }
+        body{
+            font-size:30px
+        }
+        p.d1{
             color: blue;
             font-family: 'Courier New', Courier, monospace;
             /* shout out to Keith :3*/
         }
+        p.d2{
+            font-family:'demo1';
+            font-size: 30px;
+            
+        }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit cupiditate, blanditiis recusandae corporis ad necessitatibus. Dolor libero, odio, mollitia minima voluptatem ipsum, tenetur magnam molestiae quibusdam earum molestias distinctio cum!</p>
+    <p class="d1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit cupiditate, blanditiis recusandae corporis ad necessitatibus. Dolor libero, odio, mollitia minima voluptatem ipsum, tenetur magnam molestiae quibusdam earum molestias distinctio cum!</p>
+    <p class="d2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure similique, autem nostrum harum eius debitis veritatis illum. Doloremque tenetur asperiores soluta debitis similique, perferendis et rerum laboriosam officia vel aliquid!</p>
+    <p><i class="fas fa-bell">A bell iconfont is inserted here</i> text in paragraph</p>
+    <p><i class="fa-solid fa-bug-slash">A bug-slash is inserted here</i> text in paragraph</p>
+    <i class="fab fa-accessible-icon">A fab accessible icon is inserted here</i>
 </body>
 </html>
