@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3320670 */
+  src: url('iconfont.woff2?t=1649713986146') format('woff2'),
+       url('iconfont.woff?t=1649713986146') format('woff'),
+       url('iconfont.ttf?t=1649713986146') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bijini:before {
+  content: "\e6bf";
+}
+
+.icon-chonglang:before {
+  content: "\e6c0";
+}
+
+.icon-shatan:before {
+  content: "\e6c1";
+}
+
+.icon-bingqilin:before {
+  content: "\e6c2";
+}
+
+.icon-minsu:before {
+  content: "\e6c3";
+}
+
+.icon-feiji:before {
+  content: "\e6c4";
+}
+
+.icon-xingsu:before {
+  content: "\e6c5";
+}
+
+.icon-qingtian:before {
+  content: "\e6c6";
+}
+
+.icon-zhaopian:before {
+  content: "\e6c7";
+}
+
+.icon-hanglixiang:before {
+  content: "\e6c8";
+}
+
+.icon-gouwu:before {
+  content: "\e6c9";
+}
+
+.icon-xiangji:before {
+  content: "\e6ca";
+}
+
+.icon-zhinanzhen:before {
+  content: "\e6cb";
+}
+
+.icon-zihangche:before {
+  content: "\e6cc";
+}
+
+.icon-tingche:before {
+  content: "\e6cd";
+}
+
