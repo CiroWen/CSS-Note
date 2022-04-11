@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Position</title>
+    <style>
+        div{
+            border:1px solid blue;
+            font-size: 100px;
+        }
+
+        .text1{
+            line-height:  1.15;
+            /* default line-height for font-size 100px 1.15 / 115% */
+            /* for font-size 200px 1.145 */    
+            /* line-height is the space that font that actual takes
+               ,also line-height coule be used to calculate spacing 
+               between lines
+               line spacing = line height - font size*/
+
+
+
+        }
+        .text2 {
+            height: 200px;
+            line-height: 200px;
+            /* assigning same line-height as element height positions
+                text to the middle of the element vertically*/
+        }
+
+        .text3{
+            font-size:40px;
+            width: 700px;
+            text-align: left;
+            /* 
+            justify
+            left
+            right
+            center */
+            text-decoration: red 1px line-through;
+        }
+        span{
+            font-size: 20px;
+            border: 1px red solid;
+            vertical-align: 2px;
+            /* visibility: hidden; */
+            /* 
+            baseline(default)
+            top
+            bottom
+            middle 
+            or number*/
+        }
+        img{
+            height: 500px;
+            width: 800px;
+            vertical-align: middle;
+            /* no extra space below the image */
+        }
+
+        .text4{
+            font-size: 30px;
+            width: 300px;
+            height: 200px;
+            white-space:normal;
+            /* 
+            nowrap no line break 
+            pre preserves white space*/ 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* horizontally hides the overflown texts */
+        }
+    </style>
+</head>
+<body>
+    <div class="text1">Hello! World!</div>
+    <div class="text2">Hello! World!</div>
+    <div class="text3">Lorem ipsum, dolor sit <span>span inside</span> amet consectetur adipisicing elit. Nemo temporibus saepe id aliquid quas iste eligendi, tempore consequatur quia. Veniam non iusto dolorem dicta asperiores omnis reiciendis, ducimus quaerat ratione.</div>
+    <div><img src="https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/Ekran-Resmi-2019-11-18-18.08.13.png" alt=""></div>
+    <div class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ratione quos perspiciatis quo animi enim pariatur distinctio modi, accusamus, saepe, dicta dolor non cum esse officia. Molestias delectus vero quis velit.</div>
+    <div class="text5">Today is a good day</div>
+
+</body>
+</html>
