@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Related</title>
+    <style>
+        /* to assign background properties in the easyway
+           i.e. background: ulr('../') #999 center center/contain no-repeat border-box content-box 
+           background-size needs to follow position with an '/' blackslash
+           and background-origin needs to be assigned previously to clip*/
+        .box1{
+            width: 600px;
+            height: 600px;
+            background-color: #999;
+            border:10px greenyellow double;
+            background-image: url('./kitten.png');
+            /* 
+            background color of the image will cover the color of the element,
+            also if bkground image is smaller than the element, imgage will fill up the element
+            otherwise, some part of the image will not be able to display*/
+            background-repeat: no-repeat;
+            /* 
+            repeat(default) repeats through x and y axis of the parent element */
+            /* background-position: top ; */
+            /* accepts 1/2 value of either top, bottom, left, right center or number with unit
+             and position as 9-box grid*/
+
+            /* background-position: 10px 20px; */
+             /* 10px on x axis to it's parent element, 20px on y axis. */
+            /* padding: 50px; */
+            background-clip: content-box;
+            /* border-box(default) include up to border area
+               padding-box  background size will include padding 
+               content-box background size will only include content area(no padding)*/
+
+            background-origin: border-box;
+            /* determines where the original position of background image is
+               padding-box starts from padding
+               content-box starts from content area*/
+
+            background-size: 500px 400px;
+            /* determines the size of picture,
+               could also be cover/contain.  */
+        }
+
+        .box2{
+            background-color: aqua;
+            background-image: url('./doggu.png');
+            /* background-size:contain ; */
+            background-repeat: no-repeat;
+            height: 2000px;
+            width: 300px;
+            background-attachment: fixed;
+            /* fixed/scroll(default) */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">Content of box2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reprehenderit, suscipit modi nemo placeat eaque molestias itaque quam dolore vero ipsum fuga asperiores optio, molestiae praesentium hic delectus a quae?</div>
+    </div>
+</body>
+</html>
