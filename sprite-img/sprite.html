@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Img Demo</title>
+    <style>
+        .box1{
+            background-image: url('./flags.png');
+            width: 32px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: -2px -170px;
+            /* x moves 2px toward negative and y moves 170px toward negative*/
+        }
+        /* 
+            process of using a sprite image
+            1. measure the size of the selected icon
+            2. make an element that fits the icon
+            3. set the spreit image as background-image of the element
+            4. set the correct background-position to shows the icon  */
+
+
+        .box2{
+            background-image: url('./flags.png');
+            width: 280px;
+            height: 590px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+    </div>
+    <hr>
+    <p>Sprite background image display above</p>
+    <hr>
+    <p>Original flag picture below</p>
+    <div class="box2"></div>
+</body>
+</html>
