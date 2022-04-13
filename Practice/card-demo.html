@@ -5,17 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+    <script src="https://kit.fontawesome.com/b699ccdb71.js" crossorigin="anonymous"></script>
     <style>
+        body{
+            
+             background: #f0efee;
+            font-family: Open Sans,sans-serif;
+
+        }
         .container{
+            display: inline-block;
             width: 419px;
             height: 628px;
             overflow: hidden;
-            background-color: #999;
-        }
-        .body{
-            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgb(0 0 0 /25%);
+            /* stereoscopic effect */
+            border-radius: 5px;
+            
         }
 
+        .body{
+            
+            padding: 0 30px;
+            padding-bottom: 0px;
+            color: #c9c9c9;
+            border-bottom: 2px solid #f7f7f6;
+        }
+        i{
+            margin-right: 5px;
+        }
+        p{
+            line-height: 20px;
+        }
+        h3{
+            
+            color: #a4a4a4;
+        }
+        h4{
+            padding: 0;
+            margin: 0;
+        }
+
+        .rating{
+            margin-top: 10px;
+            font-size: 1.2rem;
+            padding: 0px 30px;
+            color: #c9c9c9;
+        }
+        .rating i:hover{
+            color: bisque;
+        }
+        .rating i:first-child{
+            color: bisque;
+        }
+        .fb{
+            float:right
+        }
+        .origin{
+            display: inline;
+            width: 419px;
+            height: 628px;
+        }
+        .origin img{
+            width: 419px;
+            height: 628px;
+        }
     </style>
 </head>
 <body>
@@ -23,12 +78,23 @@
         <img src="./card-img.png" alt="" class="">
         <div class="body">
             <h3>Theather</h3>
-            <h4>Movies</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic veritatis laboriosam quos recusandae sunt consectetur reiciendis aut adipisci! Quidem error, saepe ad deserunt porro cupiditate nulla debitis molestias harum ratione.
-            Perspiciatis, maxime. Consequuntur nisi culpa aut molestiae est asperiores eos eum sapiente facilis nihil, quos mollitia consectetur suscipit dolore inventore perspiciatis doloremque similique! Illo, ipsum fugiat alias nisi inventore maxime.</p>
+            <h4><i class="fa-solid fa-location-dot"></i>Movies</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic veritatis laboriosam quos recusandae sunt consectetur reiciendis aut adipisci! Quidem error, saepe ad deserunt porro cupiditate nulla debitis molestias harum ratione.</p>
+            <p>Perspiciatis, maxime. Consequuntur nisi culpa aut molestiae est asperiores eos eum sapiente facilis nihil, quos mollitia consectetur suscipit dolore in.</p>
         </div>
-        <div class="rating">***** FaceBook</div>
+        <div class="rating"> 
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-brands fa-facebook fb"></i>
+        </div>
 
+    </div>
+
+    <div class="origin">
+        <img src="./card-origin.png" alt="">
     </div>
 </body>
 </html>
