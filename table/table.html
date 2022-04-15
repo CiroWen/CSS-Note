@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: black double 1px;
+            width:50%;
+            margin: 0 auto;
+        }
+        td{
+            border:black double 1px
+        }
+    </style>
+</head>
+<body>
+    <!-- a simple version of a table -->
+    <table>
+    <tr>
+        <td rowspan="2">123</td>
+        <!-- rowspan = 2 means this data is talking space of 2 rows if there is 
+        another table row, and will affect the layout of the other rows-->
+        <td>123</td>
+        <td>123</td>
+        <!-- each td represents a colomn in the row -->
+    </tr>
+    <tr>
+        <td colspan="2">1</td>
+    </tr>
+</table>
+</body>
+</html>
