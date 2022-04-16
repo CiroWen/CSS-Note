@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input{
+            display: block;
+            margin: 10px;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="username" placeholder="text input" autocomplete="on" autofocus>
+        <!-- name is for serverside -->
+        <input type="email" name="email" placeholder="email input" readonly>
+        <input type="password" name="password" placeholder="password input" disabled>
+        <!-- input with readonly cant be edit but will be submit
+            while disable won't be submitted -->
+
+        radio below(only one of the radio can be selected):
+        <input type="radio" name="radio" value="radio-value">
+        <input type="radio" name="radio" value="radio-value2" checked>
+        checkbox below(more then one of the checkbox can be checked)
+        <input type="checkbox" name="checkbox-name" value="checkbox-value"  checked>
+        <input type="checkbox" name="checkbox-name" value="checkbox-value"  >
+        <input type="checkbox" name="checkbox-name" value="checkbox-value"  >
+        select below not a type of input:
+        <select name="select" id="">
+            <option value="option1">option1</option>
+            <option value="option2" selected>option2</option>
+            <option value="option3">option3</option>
+        </select>
+        <input type="image">
+        <input type="color" name="color">
+
+        <input type="reset" value="a reset input">
+        <input type="submit" value="a submit input">
+        <button type="submit">A submit button</button>
+        <button type="reset">A reset button</button>
+    </form>
+</body>
+</html>
