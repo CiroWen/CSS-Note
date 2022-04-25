@@ -1,17 +1,19 @@
+/* container at very top */
 .top-container{
     background-color: #333;
     width: 100%;
     height: 40px;
     line-height: 40px;
-
 }
-/* left top products section*/
+/* left top products section and list-item*/
  .products, .nav-top li{
     float:left;
 }
+/* user info & card section at top */
 .user, .cart{
     float: right;
 }
+/* anchor style inside */
 .nav-top a {
     font-size: 12px;
     color: #b0b0b0;
@@ -20,16 +22,17 @@
     /* each products of Mi's official website are anchors and clickable as a 
     block element */
 } 
+/* anchor hover style within navigation-top container */
 .nav-top a:hover{
     color:#ffffff
 }
-
+/* style for line('|') in the top navigation bar */
 .line{
     font-size:12px;
     margin: 0px 8px;
     color: #414141;
 }
-/* right top user section */
+/* right top cart section */
 .cart{
     margin-left:15px
 }
@@ -40,12 +43,10 @@
 .cart i{
     margin-right: 4px;
 }
-
+/* qrcode(download app) dropdown style */
 .app .qrcode{
-    /* display: none; */
     width: 124px;
     /* height: 148px; */
-    /* background-color: aqua; */
     line-height: 1;
     text-align: center;
     box-shadow: 0 0 5px rgb(0 0 0 /25%);
@@ -57,7 +58,6 @@
     overflow: hidden;
 
 }
-
 /* mixing wont work */
 .app:hover .qrcode{
     display: block;
@@ -68,13 +68,10 @@
     display: block;
     
 }
-
-
 .qrcode img{
     width: 112px;
     margin: 5px 6px;
 }
-
 .qrcode span{
     font-size: 14px;
     color: #000;
@@ -94,6 +91,5 @@
 }
 .app {
     position: relative;
-    /*  */
-
 }
+/* qrcode(download app) dropdown style ends */
