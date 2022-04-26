@@ -93,3 +93,46 @@
     position: relative;
 }
 /* qrcode(download app) dropdown style ends */
+
+/* header navigation style starts */
+.logo-wrapper{
+    /* background-color: aqua; */
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    left: 0;
+    position: relative;
+    transition: left 2s;
+    overflow: hidden;
+} 
+
+.logo-wrapper .logo{
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/logo-mi.png);
+    background-size: 100%;
+    /* origin size of the image is bigger than contianer */
+    position: absolute;
+    left: 0;
+    
+}
+
+.logo-wrapper .home{
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/logo-mi2.png);
+    background-size: 100%;
+    position: absolute;
+    left: -55px;
+}
+
+.logo-wrapper:hover .home{
+    left:0;
+
+}
+
+.logo-wrapper:hover .logo{
+    left:-55px
+}
