@@ -105,32 +105,28 @@
     transition: left 2s;
     overflow: hidden;
 } 
-
-.logo-wrapper .logo{
+.logo-wrapper a {
     float: left;
     width: 55px;
     height: 55px;
-    background-image: url(../img/logo-mi.png);
     background-size: 100%;
     /* origin size of the image is bigger than contianer */
     position: absolute;
-    left: 0;
-    
+    transition: left 2s;
 }
 
+.logo-wrapper .logo{
+    background-image: url(../img/logo-mi.png);
+    left: 0;
+}    
+
 .logo-wrapper .home{
-    float: left;
-    width: 55px;
-    height: 55px;
     background-image: url(../img/logo-mi2.png);
-    background-size: 100%;
-    position: absolute;
     left: -55px;
 }
 
 .logo-wrapper:hover .home{
     left:0;
-
 }
 
 .logo-wrapper:hover .logo{
