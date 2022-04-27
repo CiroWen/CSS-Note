@@ -56,7 +56,6 @@
     transition: height 0.8s;
     height:0;
     overflow: hidden;
-
 }
 /* mixing wont work */
 .app:hover .qrcode{
@@ -155,17 +154,14 @@
     /* text-align: center; */
     margin-right:  20px;
 }
-
 .header-nav li a {
     text-decoration: none;
     display: block;
     /* block hovering */
 }
-
 .header-nav li a:hover{
     color: #ff6a00;
 }
-
 .header-nav .show-detail:hover ~ .product-dropdown,
 .product-dropdown:hover{
     height: 228px;
@@ -175,7 +171,6 @@
 .all-products{
     visibility: hidden;
 }
-
 .product-dropdown{
     height: 0px;
     width: 100%;
@@ -219,6 +214,7 @@
 }
 .search .search-input:focus + .search-btn{
     outline: 1px solid #ff6700;
+    border-left: 0px solid rgb(224, 224, 224);
 }
 .search .search-btn{
     height: 50px;
@@ -230,6 +226,7 @@
     color: #616161;
     font-size: 18px;
     border-left: 1px solid rgb(224, 224, 224);
+    transition: color,background-color .3s;
 }
 .search .search-btn:hover{
     background-color: rgb(255, 103, 0);
