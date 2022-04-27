@@ -220,15 +220,12 @@
 .search .search-input:focus + .search-btn{
     outline: 1px solid #ff6700;
 }
-
-
 .search .search-btn{
     height: 50px;
     width: 52px;
     padding: 0;
     border: none;
     float: left;
-
     background-color: #fff;
     color: #616161;
     font-size: 18px;
@@ -238,5 +235,4 @@
     background-color: rgb(255, 103, 0);
     color: #fff;
 }
-
 /* search bar section ends  */
