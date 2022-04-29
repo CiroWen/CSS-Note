@@ -23,8 +23,6 @@
 .nav-top a:hover{
     color:#ffffff
 }
-
-
 /* style for line('|') in the top navigation bar */
 .line{
     font-size:12px;
@@ -68,11 +66,9 @@
 /* qrcode(download app) dropdown style */
 .app .qrcode{
     width: 124px;
-    /* height: 148px; */
     line-height: 1;
     text-align: center;
     box-shadow: 0 0 5px rgb(0 0 0 /25%);
-    /* display: none; */
     position: absolute;
     left:-40px;
     transition: height 0.8s;
@@ -166,14 +162,12 @@
     height: 100px;
     float: left;
 }
-
 .header-nav{
     font-size: 16px;
     margin-left: 78px;
     height: 100px;
     line-height: 100px;
     /* background-color: aqua;   */
-
 }
 .header-nav > li{
     float: left;
@@ -247,7 +241,6 @@
     outline: 1px solid #ff6700;
     border-left: 0px solid rgb(224, 224, 224);
 }
-
 .search .search-btn{
     height: 50px;
     width: 52px;
@@ -267,11 +260,9 @@
 /* search bar section ends  */
 
 /* left-menu starts, while it belongs to header-nav all products */
-
 .left-menu {
      width: 234px;
     height: 420px;
-    
     padding: 20px 0;
     background-color: rgba(0, 0, 0, .6);
     position: absolute;
@@ -280,24 +271,19 @@
     line-height: 1;  
     position: absolute;
 }
-
 ul.left-menu li a {
     display: block;
     font-size: 15px;
     color: white;
     height: 42px; 
     margin-right: 0;
-    
     padding: 0 30px;
     line-height: 42px;
-
 }
-
 .left-menu a i{
     float: right;
     line-height: 42px;
 }
-
 
 ul.left-menu li a:hover{
     background-color: #FF6700;
@@ -325,7 +311,6 @@ ul.left-menu li a:hover{
     right: 40px;
     z-index: 9999;
 }
-
 .pointer a{
     background-color: rgba(0, 0, 0, 0.3);
     height: 6px;
@@ -335,13 +320,11 @@ ul.left-menu li a:hover{
     float: left;
     margin-left: 5px;
 }
-
 .pointer a:hover,
 .pointer a.active{
     background-color: rgba(255, 255, 255, 0.4);
     border-color: rgba(0, 0, 0, 0.3);    
 }
-
 .prev-next{
     position: absolute;
     bottom: 45%;
@@ -352,7 +335,6 @@ ul.left-menu li a:hover{
 .prev-next a i {
     color: rgba(226, 226, 226, 1);
 }
-
 .prev-next a{
     height: 65px;
     width: 45px;
@@ -361,14 +343,12 @@ ul.left-menu li a:hover{
     padding-top: 5px;
     border-radius: 10%;
 }
-
 .prev-next a:hover{
     background: rgba(124, 124, 124,0.3);
 }
 .prev-next .next{
     margin-left: 890px;
 }
-
 /* banner ends */
 
 /* bottom section starts */
@@ -379,7 +359,6 @@ ul.left-menu li a:hover{
     width: 984px;
     height: 170px;
 }
-
 .shortcut{
     width: 234px;
     height: 168px;
@@ -399,7 +378,6 @@ ul.left-menu li a:hover{
     text-align: center;
     padding-top: 20px;
 }
-
 .shortcut a{
     color: #cfccca;
     text-decoration: none;
@@ -409,12 +387,9 @@ ul.left-menu li a:hover{
     display: block;
     font-size: 25px;
 }
-
 .ad-list li img{
     float: left;
     height: 168px;
     width: 316px;
     margin-left: 14px;
-    
-    
 }
