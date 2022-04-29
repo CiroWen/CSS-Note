@@ -40,5 +40,38 @@ div:nth-of-type(2){
 div:nth-of-type(3){
     transition-timing-function: ease-in-out;
 }
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(.17,.67,.72,-1);
+    /* cubic-bezier.com */
+}
+
 /* transition-timing-function refers to the linear animation speed
 e.g. */
+
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: silver;
+}
+
+.box1 div{
+    width: 100px;
+    height: 100px;
+}
+
+.box2{
+    background-color: #bfa;
+    /* transition:all 2s; */
+    transition-property: width,height;
+    /* which property to have trasition effect */
+    transition-duration: 2s;
+    /* how long the transition takes */
+    transition-delay: 2s;
+    /* wait for certain time before transition starts */
+    
+}
+
+.box1:hover .box2{
+    width: 200px;
+    height: 200px;
+}
