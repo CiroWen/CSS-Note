@@ -1,0 +1,61 @@
+.box1{
+    width: 400px;
+    height: 400px;
+    background-color: silver;
+}
+
+.box1 div{
+    width: 100px;
+    height: 100px;
+}
+
+.box2{
+    background-color: #bfa;
+    /* transition:all 2s; */
+    transition-property: width,height;
+    /* which property to have trasition effect */
+    transition-duration: 2s;
+    /* how long the transition takes */
+    transition-delay: 2s;
+    /* wait for certain time before transition starts */
+}
+
+.box1:hover .box2{
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+}
+
+.box3{
+    background-color: aqua;
+    animation-name: box3;
+        /* name of the keyframe(which animation to use) */
+    animation-duration: 2s;
+        /* animation complete time */
+    animation-iteration-count: 1;
+        /* animation repeat time */
+    animation-direction: alternate;
+        /* default: normal ('from' to 'to')
+       reverse: to to from 
+       alternate: "'from' to 'to'" to "'to' to 'form'" */
+
+    /* animation-play-state: paused; */
+        /* default: running
+       paused: pause  */
+    animation-fill-mode: forwards;
+        /* default: none, return to its original posiiton when animation finished,
+        forwards, stays at the 'to' posiiton
+        backwards, returns to the 'from' position */
+}
+
+@keyframes box3 {
+    to{
+        margin-left: 300px;
+        /* could use percentage such as 0% */
+    
+    }
+    from{
+        margin-left: 0;
+        background-color: azure;
+    }
+}
