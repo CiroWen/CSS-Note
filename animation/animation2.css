@@ -16,6 +16,19 @@
     animation: ball-drop 1s;
 }
 
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px auto;
+    transition: all 1s;
+    transform-origin: 0px 0px;
+        /* where the center is during the transform */
+}
+.box2:hover{
+    transform: scaleX(2) scaleY(2);
+}
+
 @keyframes ball-drop{
     from{
         margin-top: 0;
