@@ -1,0 +1,36 @@
+// the comment in less won't be transtlated int css
+.box1{
+    background-color: @general-col;
+    height: @general-height;
+    background-size: 100%;
+    background-image: url("@{img-route}");
+    @{general-box}{
+        background-color: #bfa;
+
+        height: @general-height;
+        width: @general-width;
+        .box3{
+            background-color: #bfe;
+        }
+    }
+}
+
+@general-height:500px;
+@general-width:500px;
+@general-col:#bff;
+@general-box: .box2;
+// class name variable
+@img-route: "./img/less.jpg";
+
+div{
+    width: 300px;
+    height: $width;
+    // refers to the value from other property using dollar sign
+    &:hover{
+        // & sign refers to it's parant(closest) element
+        width: 600px;
+    }
+}
+
+
+

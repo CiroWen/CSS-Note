@@ -1,0 +1,31 @@
+html{
+    --col:#bff
+}
+/* CSS: the color #bff is used multiple times, if any change were to be made,
+    it's clumbersome. Thus, we could assign the #bff to a css variable(
+        starts with two minus signs '--' followed by name
+        and use var(--name) for property
+    however, the compatibility of css variable is not adequate,
+    Thus, there are css preprocessor such as LESS, SASS.*/
+
+/* LESS: */
+
+
+.box1,.box2,.box3{
+    width: 100px;
+    height: calc(20*5px);
+    margin: 20px auto;
+}
+
+.box1{
+    background-color: var(--col);
+}
+
+.box2{
+    color: #bff;
+    background: #000;
+}
+
+.box3{
+    border: 2px solid #bff;
+}

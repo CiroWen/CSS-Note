@@ -1,0 +1,21 @@
+.box1 {
+  background-color: #bff;
+  height: 500px;
+  background-size: 100%;
+  background-image: url("img/less.jpg");
+}
+.box1 .box2 {
+  background-color: #bfa;
+  height: 500px;
+  width: 500px;
+}
+.box1 .box2 .box3 {
+  background-color: #bfe;
+}
+div {
+  width: 300px;
+  height: 300px;
+}
+div:hover {
+  width: 600px;
+}
