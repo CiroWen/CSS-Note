@@ -5,9 +5,19 @@
     border: 10px rgb(224,224,224) solid;
     display: flex;
         /* assigns the flexbox container */
-    flex-direction: row-reverse;
+    flex-direction: row;
         /* how flex elements be arranged
             row, row-reverse, column, colomn-reverse */
+    /* flex-wrap: wrap; */
+        /* whether flex items are forced onto one 
+        line or can wrap onto multiple lines  */
+    /* justify-content: center; */
+        /* how flex elements are arranged horizontally */
+    /* align-items: center; */
+        /* how flex elements are arrange vertically */
+    /* align-content: center */
+        /* sets the distribution of space between and 
+        around content items */
 }
 
 .container div{
@@ -20,25 +30,36 @@
     /* flex-grow: 1; */
         /* flex elements grows with given weight value and fill up
             the empty space of flex container*/
-    /* flex-shrink: 1; */
+    /* flex-shrink: 0; */
         /* same as grow but flex elements shrink when flex container
         doesn't have enough space */
+    
     
 }
 .container div:nth-child(1){
     flex-grow: 1;
+    /* align-self: center; */
+    flex-basis: 500px;
+        /* if direction colomn, basis refers to element's height,
+        while row refers to width*/
+    order: 2;
 }
 .container div:nth-child(2){
     flex-grow: 2;
+    flex-basis: auto;
+    order: 3;
 }
 .container div:nth-child(3){
     flex-grow: 3;
+    order: 4;
 }
 .container div:nth-child(4){
     flex-grow: 4;
+    order: -1;
 }
 .container div:nth-child(5){
     flex-grow: 5;
+    order: 0;
 }
 
     /* flexbox
