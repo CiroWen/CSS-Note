@@ -1,0 +1,55 @@
+.container{
+    /* height: 500px; */
+    width: 900px;
+    margin: 50px auto;
+    border: 10px rgb(224,224,224) solid;
+    display: flex;
+        /* assigns the flexbox container */
+    flex-direction: row-reverse;
+        /* how flex elements be arranged
+            row, row-reverse, column, colomn-reverse */
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    /* float: left; */
+        /* normally, float will occur collaps of parent's height */
+    /* flex-grow: 1; */
+        /* flex elements grows with given weight value and fill up
+            the empty space of flex container*/
+    /* flex-shrink: 1; */
+        /* same as grow but flex elements shrink when flex container
+        doesn't have enough space */
+}
+.container div:nth-child(1){
+    flex-grow: 1;
+}
+.container div:nth-child(2){
+    flex-grow: 2;
+}
+.container div:nth-child(3){
+    flex-grow: 3;
+}
+.container div:nth-child(4){
+    flex-grow: 4;
+}
+.container div:nth-child(5){
+    flex-grow: 5;
+}
+
+    /* flexbox
+        -a way to arrange layout, to replace float type layout.
+        -flexbox makes the elements bouncy, and responsive to change
+        of size of viewport.
+        -flex container,
+            -to use flexbox, must assign an container.
+            -fisplay:flex 
+        -flex element
+            -only child elements of flex container are flex element
+            -flex element can be flex container in the meanwhile
+        */
+
+
