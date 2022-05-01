@@ -23,6 +23,7 @@
     /* flex-shrink: 1; */
         /* same as grow but flex elements shrink when flex container
         doesn't have enough space */
+    
 }
 .container div:nth-child(1){
     flex-grow: 1;

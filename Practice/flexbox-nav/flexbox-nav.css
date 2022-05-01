@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC", Verdana, Arial, '微软雅黑','宋体';
+    font-size: 15px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    background-color: #E8E7E3;
+    height: 46px;
+    width: 1211px;
+    margin: 0 auto;
+    color: #7D7D7D;
+    margin-top: 20px;
+}
+
+ul li{
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    display: block;
+    flex-grow: 1;
+}
+
+ul li:hover{
+    background-color:#000;
+}
+
